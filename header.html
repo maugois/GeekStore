@@ -1,0 +1,73 @@
+<header>
+    <div class="container-h">
+        <div id="contato">
+            <ul id="itens-contatos">
+                <li><i class="fa-solid fa-phone"></i> telefone: (11)9999-9999</li>
+                <li><i class="fa-brands fa-whatsapp"></i> whatsapp: (11)9999-9999</li>
+                <li><span class="material-symbols-outlined">comment</span>fale conosco</li>
+            </ul>
+
+
+            <ul id="itens-social">
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </ul>
+        </div>
+        
+        <div class="itens-header" id="myHeader">
+            <div id="logo">
+                <a class="img-logo" href="index.php"><img class="img-logo" src="" alt=""></a>
+            </div>
+
+            <div id="pesquisa">
+                <input id="pesquisa-item" type="text" placeholder="O que você está procurando? "/> 
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div id="itens">
+                <div class="itens-coisas">
+                    <a id="lin-mn-conta" href="index.php"><i class="fa-solid fa-user"></i><p>minha conta</p><span class="material-symbols-outlined" id="arrow-white">expand_more</span></a>
+                </div>
+
+                <div class="itens-coisas">
+                    <a href="index.php"><span class="material-symbols-outlined" id="heart-red">favorite</span></a>
+                </div>
+
+                <div class="itens-coisas">
+                    <a href="index.php"><span class="material-symbols-outlined" id="cart-white">shopping_cart</span><span id="ntf-circle"></span></a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <ul id="menu-itens">
+                <li id="a" class="menu-item"><a href="produto.php">produtos</a></li>        
+                <li class="menu-item"><a href="index.php">canecas</a></li>
+                <li class="menu-item"><a href="index.php">camisas</a></li>             
+                <li class="menu-item"><a href="index.php">calças</a></li>
+                <li class="menu-item"><a href="index.php">moletons</a></li>
+                <li class="menu-item"><a href="index.php">jaquetas</a></li>
+                <li class="menu-item"><a href="index.php">acessórios</a></li>
+                <li class="menu-item"><a href="index.php">lançamentos</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+</script>
+    

@@ -1,0 +1,678 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'geral';
+    src: url("../font/Roboto-Regular.ttf");
+}
+
+/* ########################### COMEÇO GERAL ########################### */
+body {
+    font-family: 'geral', sans-serif;
+}
+/* ########################### FIM GERAL ########################### */
+
+
+
+/* ########################### COMEÇO HEADER ########################### */
+/* Sticky */
+.content {
+    padding: 16px;
+}
+  
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + .content {
+    padding-top: 102px;
+}
+
+/* Começo topo header */
+#contato {
+    display: flex;
+    justify-content: space-around;
+}
+
+#contato #itens-contatos {
+    display: flex;
+    width: 65%;
+    margin: 0.7em 0; 
+    justify-content: center;
+}
+
+#contato #itens-contatos > li {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 0.9em;
+    cursor: pointer;
+    font-variant: small-caps;
+}
+
+#contato #itens-contatos > li  i {
+    color: #ff0000;
+    margin-right: 0.3em;
+}
+
+#contato #itens-contatos > li  span {
+    color: #ff0000;
+    font-size: 1.3em;
+    margin-right: 0.3em;
+    font-weight: 200;
+}
+
+#contato #itens-social {
+    display: flex;
+    width: 35%;
+    margin: 0.8em 0;
+    justify-content: center; 
+}
+
+#contato #itens-social > li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+#contato #itens-social > li i {
+    color: #000000;
+    margin-right: 0.3em;
+}
+/* Fim topo header */
+
+/* Começo geral */
+.itens-header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #111111;
+    height: 100px;
+    width: 100%;
+    z-index: 5;
+}
+/* Fim geral */
+
+
+
+/* Começo logo */
+#logo {
+    width: 25%;
+}
+
+#logo .img-logo {
+    width: 90px;
+}
+/* Fim logo */
+
+
+
+/* Começo pesquisa */
+#pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#pesquisa #pesquisa-item {
+    border: solid 1px #fff;
+    border-radius: 4px;
+    padding: 0 48px 0 10px;
+    width: 75%;
+    height: 45px;
+    font-size: 0.9em;
+    z-index: 1;
+}
+
+#pesquisa button {
+    background-color: #e71d1d;
+    border: #e71d1d;
+    border-radius: 4px;
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+    cursor: pointer;
+    position: relative;
+    margin: 0 55px 0 -45px;
+    transition: all ease 0.5s;
+}
+
+#pesquisa button:hover {
+    background-color: #ff0000;
+}
+
+#pesquisa > button i {
+    color: #fff;
+    font-size: 1.5em;
+    position: absolute;
+    margin: -10px 10px 10px -10px;
+}
+/* Fim pesquisa */
+
+
+
+/* Começo itens na esquerda*/
+#itens {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    width: 25%;
+}
+
+#itens .itens-coisas > a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#itens .itens-coisas > #lin-mn-conta{
+    gap: 5px;
+}
+
+#itens .itens-coisas a > .fa-solid{
+    color: #e71d1d;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+#itens .itens-coisas > a > p {
+    color: #fff;
+    font-variant: small-caps;
+}
+
+#itens .itens-coisas a #arrow-white{
+    margin-top: 4px;
+    color: #fff;
+    font-size: 1em;
+}
+
+#itens .itens-coisas a #heart-red {
+    color: #e71d1d;
+    font-size: 1.8em;
+    font-weight: 200;
+}
+
+#itens .itens-coisas a #heart-red:hover {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+  color: #e71d1d;
+}
+
+#itens .itens-coisas a #cart-white {
+    color: #fff;
+    font-size: 1.9em;
+}
+
+#itens .itens-coisas a #ntf-circle {
+    border: solid 2px #e71d1d;
+    border-radius: 30px;
+    height: 18px;
+    width: 18px;
+    background-color: #e71d1d;
+}
+
+#itens .itens-coisas a #ntf-circle::after {
+    content: '0';
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: -1px;
+    margin-left: 3px;
+    position: absolute;
+}
+/* Fim itens na esquerda*/
+
+
+
+/* Começo menu */
+.menu {
+    padding: 0 100px 0 100px;
+    background-color: #111111;
+    border-top: solid 1px #4b4949;
+    max-width: 100%;
+    height: 48px;
+    z-index: 1;
+}
+
+#menu-itens {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+    position: relative;
+}
+
+#menu-itens .menu-item a {
+    text-decoration: none;
+    color: #fff;
+    font-variant: small-caps;
+    transition: 0.1s;
+}
+
+#menu-itens .menu-item a:hover {
+    color: #e71d1d;
+}
+
+#menu-itens .menu-item a::after {
+    content: " ";
+    width: 0;
+    height: 3px;
+    background-color: #e71d1d;
+    margin: 5px auto auto;
+    display: block;
+    transition: 0.1s;
+}
+
+#menu-itens .menu-item a:hover::after {
+    width: 80%;
+    transition: 0.3s linear;
+}
+/* Fim menu*/
+/* ########################### FIM HEADER ########################### */
+
+
+
+/* ########################### COMEÇO INDEX ########################### */
+/* Começo geral */
+
+/* Fim geral */
+/* ########################### FIM INDEX ########################### */
+
+
+
+/* ########################### COMEÇO PRODUTO ########################### */
+
+/* ########################### FIM PRODUTO ########################### */
+
+
+
+/* ########################### COMEÇO EMPRESA ########################### */
+/* Começo geral */
+#meio-empresa {
+    background-color: #eeeeee;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.main-principal {
+    width: 80%;
+    margin: auto;
+}
+
+.main-topo {
+    display: flex;
+    margin: 40px 0;
+    gap: 20px;
+    border-bottom: 1px solid #b6b1b1;
+    border-top: 1px solid #b6b1b1;
+    padding: 10px 0;
+}
+
+.main-topo a {
+    text-decoration: none;
+    color: #a09999;
+    transition: all 0.2s ease;
+    font-size: 0.9em;
+}
+
+.main-topo a:hover {
+    text-decoration: none;
+    color: #746e6e;
+}
+
+.main-topo a::after {
+    content: " ";
+    border-right: 1px solid #b6b1b1;
+    height: 60px;
+    padding-left: 20px;
+}
+
+.main-topo a i {
+    padding-right: 10px;
+}
+
+.main-topo p {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.main-meio h1 {
+    font-size: 2em;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-bottom: #6b6666 solid 3px;
+}
+/* Fim geral */
+
+/* Começo */
+#meio-empresa #cont-empresa {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+#meio-empresa #cont-empresa p {
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Fim */
+/* ########################### FIM EMPRESA ########################### */
+
+
+
+/* ########################### COMEÇO CONTATO ########################### */
+/* Começo */
+#main-contato {
+    display: grid;
+    grid-template: 50px 100%/2fr;
+    grid-template-areas: 't t' 'f i';
+    margin-bottom: 25px;
+    background-color: #eeeeee;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+}
+
+#main-contato h1 {
+    grid-area: t;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border-bottom: #6b6666 solid 3px;
+}
+
+#main-contato #art-form {
+    grid-area: f;
+    display: flex;
+    justify-content: end;
+    margin: 40px 20px 0 0;
+}
+
+#main-contato #art-form form #tb-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+#main-contato #art-form form #tb-form #cabeca-tb {
+    margin: 0 auto 40px;
+    height: 10px;
+    width: 100%;
+}
+
+#main-contato #art-form form #tb-form #cabeca-tb th {
+    font-size: 1.15em;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+#main-contato #art-form form #tb-form #corpo-tb .linha-tb {
+    font-size: 1.1em;
+    font-variant: small-caps;
+    height: 75px;
+}
+
+#main-contato #art-form form #tb-form #corpo-tb .linha-tb .titulo-form {
+    display: flex;
+    justify-content: end;
+}
+
+#main-contato #art-form form #tb-form #corpo-tb .linha-tb .campo-form {
+    height: 30px;
+    width: 20em;
+    margin-left: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+#main-contato #art-form form #tb-form #corpo-tb .linha-tb #campo-mensagem {
+    padding-bottom: 90px;
+}
+
+#main-contato #art-form form #tb-form #corpo-tb #btn-row {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+#main-contato #art-form form #tb-form #corpo-tb .linha-tb #btn-form {
+    margin-top: 20px;
+    height: 40px;
+    width: 90px;
+    background-color: #111111;
+    color: #ffffff;
+    border: solid 1px #111111;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    font-weight: bold;
+}
+
+#main-contato #art-form form #tb-form #corpo-tb .linha-tb #btn-form:hover {
+    background-color: #686565;
+    color: #ffffff;
+}
+
+#main-contato #cont-right {
+    grid-area: i;
+    margin: 120px 0 0 20px;
+    min-height: 100%;
+}
+
+#main-contato #cont-right #table-info {
+    margin-bottom: 10px;
+    min-height: 40%;
+}
+
+#main-contato #cont-right #table-info .titulo-info {
+    font-size: 1.1em;
+    font-variant: small-caps;
+}
+
+#main-contato #cont-right #table-info .row-tb:hover {
+    background-color: #e7e6e6;
+}
+
+#main-contato #cont-right #table-info .row-tb td {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#main-contato #cont-right iframe {
+    width: 635px;
+    height: 220px;
+}
+/* Fim */
+/* ########################### FIM CONTATO ########################### */
+
+
+
+/* ########################### COMEÇO FOOTER ########################### */
+/* Começo geral */
+.container-f {
+    display: grid;
+    grid-template: 100px 230px 30px/1fr;
+    grid-template-areas: "n" "f" "c";
+}
+/* Fim geral */
+
+
+
+/* Começo 'início' footer */
+#noticias {
+    grid-area: n;
+    display: flex;
+    font-variant: small-caps;
+    background-color: #e71d1d;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#noticias #text-new-geral {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 0 0 0 100px;
+}
+
+#noticias #text-new-geral i {
+    font-size: 2.5em;
+}
+
+#noticias #text-new-geral #text-new1 {
+    font-size: 1.5em;
+}
+
+#noticias #text-new-geral #text-new1 span {
+    font-weight: bolder;
+    font-size: 1.35em;
+}
+
+#noticias #text-new-geral #text-new2 {
+    font-size: 0.9em;
+}
+
+#noticias #inputnew-geral {
+    display: flex;
+    margin: 0 100px 0 0;
+    gap: 10px;
+}
+
+#noticias #inputnew-geral .input-new {
+    padding: 0 48px 0 10px;
+    width: 75%;
+    height: 45px;
+    font-size: 0.9em;
+}
+
+#noticias #inputnew-geral #bnt-new {
+    border: none;
+    background-color: #111111;
+    font-variant: small-caps;
+    font-weight: 600;
+    color: #fff;
+    width: 55%;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+#noticias #inputnew-geral > #bnt-new:hover {
+    background-color: #313131;
+}
+/* Fim 'início' footer */
+
+
+
+/* Começo 'meio' footer */
+#itens-footer {
+    grid-area: f;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 50px 0 50px;
+    gap: 30px;
+    background-color: #111111;
+}
+
+#itens-footer .item-footer {
+    width: 210px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#itens-footer .item-footer > h3 {
+    margin-bottom: 15px;
+    border-bottom: 3px solid #e71d1d;
+    border-radius: 3px;
+    padding-bottom: 10px;
+    color: #fff;
+    font-variant: small-caps;
+}
+
+#itens-footer .item-footer ul, p {
+    text-align: center;
+    margin-top: 2px;
+}
+
+#itens-footer .item-footer ul li {
+    margin-bottom: 15px;
+}
+
+#itens-footer .item-footer ul li a {
+    text-decoration: none;
+    color: #696868;
+    font-variant: small-caps;
+    transition: all ease 0.2s;
+}
+
+#itens-footer .item-footer ul li a:hover {
+    color: #9e9e9e;
+}
+
+#itens-footer .item-footer ul li a span {
+    font-size: 1.3em;
+    margin-right: 0.2em;
+    font-weight: 200;
+}
+
+#itens-footer .item-footer p {
+    color: #696868;
+    font-variant: small-caps;
+}
+
+#itens-footer .item-footer #bnt-social button {
+    background-color: #242222;
+    border: none;
+    border-radius: 5px;
+    font-variant: small-caps;
+    height: 3em;
+    width: 3em;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#itens-footer .item-footer #bnt-social button i {
+    color: #686565;
+    font-size: 1.5em;
+    transition: all 0.2s ease-out;
+}
+
+#itens-footer .item-footer #bnt-social button:hover i {
+    color: #aaa4a4;
+}
+/* Fim 'meio' footer */
+
+
+
+/* Começo 'fim' footer */
+#copyright {
+    grid-area: c;
+    background-color: #111111;
+    border-top: solid 1px #4b4949;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+#copyright p {
+    color: #696868;
+    margin-top: 5px;
+}
+/* Fim 'fim' footer */
+/* ########################### FIM FOOTER ########################### */
