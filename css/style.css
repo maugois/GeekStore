@@ -279,9 +279,266 @@ body {
 
 
 /* ########################### COMEÇO INDEX ########################### */
-/* Começo geral */
+/* Começo carrousel */
+#carousel {
+    width: 100%;
+    margin-bottom: 15px;
+}
 
-/* Fim geral */
+.slideshow-container {
+    min-width: 100%;
+    position: relative;
+    margin: auto;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.2s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: #000000cc;
+}
+
+.imgslide {
+    width:100%
+}
+  
+.dots {
+    text-align:center
+}
+  
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    border: solid 1px #e71d1d;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.2s ease;
+    position: relative;
+    bottom: 70px;
+}
+  
+.active, .dot:hover {
+    background-color: #e71d1d;
+}
+  
+.fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/* Fim carrousel */
+
+/* Começo principal */
+#principal {
+    width: 85%;
+    margin: auto;
+}
+/* Fim principal */
+
+/* Começo card */
+#cards {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    height: 244px;
+    width: 361px;
+    background: url(../images/card.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.text-card1 {
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.text-card2 {
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    font-variant: small-caps;
+    border: solid 2px #fff;
+    border-radius: 5px;
+    padding: 10px 30px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.text-card2:hover {
+    background-color: #fff;
+    color: #000;
+}
+/* Fim card */
+
+
+/* Começo produtos */
+.secao-produtos {
+    margin: 50px 0;
+}
+
+.secao-produtos .title-index {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin-bottom: 40px;
+}
+
+.secao-produtos .title-index::after {
+    content: " ";
+    width: 55px;
+    height: 2px;
+    background-color: #e71d1d;
+    margin: 20px auto;
+    display: block;
+}
+
+#lancamentos-prod, #vendidos-prod {
+    display: flex;
+    gap: 30px;
+}
+
+.card-produtos {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 250px;
+    height: 460px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.card-produtos:hover {
+    -webkit-box-shadow: 0px 0px 11px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 11px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 11px -5px rgba(0,0,0,0.75);
+}
+
+.produtos-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.produtos-top .promo {
+    background-color: #f87070;
+    width: 50px;
+    height: 30px;
+    color: #fff;
+    opacity: 90%;
+    font-weight: 700;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.produtos-top .fav span {
+    color: #b4b4b4;
+    font-size: 1.9em;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.produtos-top .fav span:hover {
+    font-variation-settings:
+      'FILL' 1,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48;
+    color: #e71d1d;
+}
+
+.card-produtos .img-c {
+    width: 250px;
+}
+
+.card-produtos .desc h1 {
+    font-size: 1.3em;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+.card-produtos .desc .desc-preco {
+    margin-bottom: 35px;
+}
+
+.card-produtos .desc .desc-preco .preco {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.card-produtos .desc .desc-preco .preco .p1 {
+    text-decoration: line-through;
+    color: #9c9c9c;
+}
+
+.card-produtos .desc .desc-preco .preco span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e71d1d;
+}
+
+.card-produtos .desc-preco .p2 strong {
+    font-weight: bold;
+}
+
+.card-produtos .desc .btn-comprar {
+    font-variant: small-caps;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e71d1d;
+    padding: 10px 50px;
+    transition: all 0.3s ease-in;
+}
+
+.card-produtos .desc .btn-comprar:hover {
+    background-color: #d81a1a;
+}
+/* Começo produtos */
 /* ########################### FIM INDEX ########################### */
 
 
@@ -493,6 +750,8 @@ body {
 #main-contato #cont-right iframe {
     width: 635px;
     height: 220px;
+    border: solid 2px #746e6e;
+    border-radius: 2px;
 }
 /* Fim */
 /* ########################### FIM CONTATO ########################### */
