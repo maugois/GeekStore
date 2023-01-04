@@ -43,7 +43,7 @@
 
         <nav class="menu">
             <ul id="menu-itens">
-                <li id="a" class="menu-item"><a href="produto.php">produtos</a></li>        
+                <li class="menu-item"><a href="produto.php">produtos</a></li>        
                 <li class="menu-item"><a href="index.php">canecas</a></li>
                 <li class="menu-item"><a href="index.php">camisas</a></li>             
                 <li class="menu-item"><a href="index.php">calças</a></li>
@@ -54,20 +54,9 @@
             </ul>
         </nav>
     </div>
+
+    <script src="js/script.js"></script>
 </header>
 
-<script>
-    window.onscroll = function() {myFunction()};
     
-    var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
-
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    }
-</script>
     

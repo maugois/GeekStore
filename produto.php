@@ -27,9 +27,24 @@
 
 
         <section class="main-meio">
-            <h1 class="title-meio">Produtos</h1>
-
+            <h1 class="title-meio" id="title-produto">Produtos</h1>
             
+
+            <div>
+                <aside>
+
+                </aside>
+
+
+                <article>
+
+                </article>
+            </div>
+
+
+            <article>
+
+            </article>
         </section>
     </main>
     <!-- Fim da página -->

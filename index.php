@@ -22,11 +22,11 @@
     <section id="carousel">
         <div class="slideshow-container">
             <div class="mySlides fade">
-                <img class="imgslide" src="images/banner1.webp">
+                <img class="imgslide" src="images/banner2.webp">
             </div>
             
             <div class="mySlides fade">
-                <img class="imgslide" src="images/banner2.webp">
+                <img class="imgslide" src="images/banner1.webp">
             </div>
             
             <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -358,32 +358,52 @@
     <!-- Inclusão do rodapé -->
     <?php include('footer.html'); ?>
 </body>
+</html>
+<!-- Começo Carrousel -->
 <script>
     let slideIndex = 1;
     showSlides(slideIndex);
-    
+    carousel(slideIndex);
+
     function plusSlides(n) {
-      showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
     }
-    
+
     function currentSlide(n) {
-      showSlides(slideIndex = n);
+    showSlides(slideIndex = n);
     }
-    
+
     function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        dots[slideIndex-1].className += " active";
+        setTimeout(carousel, 4000);
     }
 </script>
-</html>
+<!-- Fim Carrousel -->
