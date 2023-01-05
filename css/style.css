@@ -232,7 +232,7 @@ body {
 
 /* Começo menu */
 .menu {
-    padding: 0 100px 0 100px;
+    padding: 0 35px 0 35px;
     background-color: #111111;
     border-top: solid 1px #4b4949;
     max-width: 100%;
@@ -555,6 +555,113 @@ body {
 
 
 /* Começo página*/
+#cat-fil {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Começo esquerda */
+#categorias {
+    border: solid 1px #c5c5c5;
+    border-radius: 3px;
+}
+
+#categorias ul {
+    display: flex;
+}
+
+#categorias ul li {
+    padding: 15px 5px;
+    cursor: pointer;
+}
+
+#categorias ul li:hover {
+    background-color: #f0f0f0;
+}
+
+#categorias ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-variant: small-caps;
+    color: #000;
+    padding-right: 5px;
+}
+/* Fim esquerda */
+
+/* Começo filtro */
+#filtro {
+    position: relative;
+    right: 33px;
+}
+
+.btn1 {
+    background-color: #fff;
+    color: #000000;
+    padding: 10px;
+    font-size: 16px;
+    border: solid 0.1px #000;
+    outline: none;
+    border-radius: 5px 0 0 5px ;
+}
+  
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown .btn2 {
+    background-color: #e71d1d;
+    color: white;
+    padding: 11px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0 ;
+    cursor: pointer;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 170px;
+    right: 3px;
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown .btn2:hover  {
+    background-color: #555758;
+}
+/* Fim filtro */
+
+/* Começo produto */
+#produtos {
+    margin-top: 2em;
+}
+
+.card-produtos-pg {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+/* Fim produto */
 
 /* Fim página*/
 /* ########################### FIM PRODUTO ########################### */
@@ -613,7 +720,7 @@ body {
     font-size: 0.9em;
 }
 
-.main-meio h1 {
+.main-meio > h1 {
     font-size: 2em;
     font-variant: small-caps;
     font-weight: bold;
