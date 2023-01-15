@@ -19,7 +19,7 @@
 
 
     <!-- Ínicio da página -->
-    <main class="main-principal content" id="principal-contato">
+    <main class="main-principal content" id="principal-contato" tabindex="0" onclick="closeSidebar()">
         <section class="main-topo">
             <a href="index.php"><i class="fa-solid fa-house"></i>Página inicial</a>
             <p>Contato</p>
@@ -38,28 +38,28 @@
 
                         <tbody id="corpo-tb">
                             <tr class="linha-tb">
-                                <td><label class="titulo-form" for="nome">nome:</label></td>
-                                <td><input id="campo-nome" class="campo-form" type="text"></td>
+                                <td class="itens-tb-cr"><label class="titulo-form" for="nome">nome:</label></td>
+                                <td class="itens-tb-cr"><input id="campo-nome" class="campo-form" type="text"></td>
                             </tr>
                             
                             <tr class="linha-tb">
-                                <td><label class="titulo-form" for="email">e-mail:</label></td>
-                                <td><input id="campo-email" class="campo-form" type="email" name="" id=""></td>
+                                <td class="itens-tb-cr"><label class="titulo-form" for="email">e-mail:</label></td>
+                                <td class="itens-tb-cr"><input id="campo-email" class="campo-form" type="email" name="" id=""></td>
                             </tr>
                             
                             <tr class="linha-tb">
-                                <td><label class="titulo-form" for="telefone">telefone:</label></td>
-                                <td><input id="campo-telefone" class="campo-form" type="number"></td>
+                                <td class="itens-tb-cr"><label class="titulo-form" for="telefone">telefone:</label></td>
+                                <td class="itens-tb-cr"><input id="campo-telefone" class="campo-form" type="number"></td>
                             </tr>
                             
                             <tr class="linha-tb">
-                                <td><label class="titulo-form" for="numero-pedido">número do pedido:</label></td>
-                                <td><input id="campo-num-pedido" class="campo-form" type="number"></td>
+                                <td class="itens-tb-cr"><label class="titulo-form" for="numero-pedido">número do pedido:</label></td>
+                                <td class="itens-tb-cr"><input id="campo-num-pedido" class="campo-form" type="number"></td>
                             </tr>
                             
-                            <tr class="linha-tb">
-                                <td><label class="titulo-form" for="mensagem">mensagem:</label></td>
-                                <td><input id="campo-mensagem" class="campo-form" type="text"></td>
+                            <tr class="linha-tb" id="mensagem-tb-r">
+                                <td class="itens-tb-cr"><label class="titulo-form" for="mensagem">mensagem:</label></td>
+                                <td class="itens-tb-cr"><input id="campo-mensagem" class="campo-form" type="text"></td>
                             </tr>
 
                             <tr id="btn-row" class="linha-tb">

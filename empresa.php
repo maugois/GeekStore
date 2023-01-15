@@ -19,7 +19,7 @@
 
 
     <!-- Ínicio da página -->
-    <main class="main-principal content" id="principal-empresa">
+    <main class="main-principal content" id="principal-empresa" tabindex="0" onclick="closeSidebar()">
         <section class="main-topo">
             <a href="index.php"><i class="fa-solid fa-house"></i>Página inicial</a>
             <p>Quem somos?</p>

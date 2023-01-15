@@ -19,7 +19,7 @@
 
 
     <!-- Ínicio da página -->
-    <main class="main-principal content" id="principal-contato">
+    <main class="main-principal content" id="principal-produto" tabindex="0" onclick="closeSidebar()">
         <section class="main-topo">
             <a href="index.php"><i class="fa-solid fa-house"></i>Página inicial</a>
             <p>Produtos</p>
@@ -60,428 +60,428 @@
 
             <div id="produtos">
                 <article class="card-produtos-pg">
-                    <div class="card-produtos">
-                        <div class="produtos-top">
-                            <div class="promo">
+                    <div class="card-produtos card-rp">
+                        <div class="produtos-top produtos-top-rp">
+                            <div class="promo promo-rp">
                                 <span>-10%</span>
                             </div>
 
 
-                            <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
+                            <a href="index.php" class="fav fav-rp"><span class="material-symbols-outlined">favorite</span></a>
                         </div>
 
 
-                        <div class="img-card img-c">
-                            <img class="img-c" src="images/produto1.webp" alt="imagem do produto">
+                        <div class="img-card img-c img-crp">
+                            <img class="img-c img-crp" src="images/produto1.webp" alt="imagem do produto">
                         </div>
 
 
-                        <div class="desc">
+                        <div class="desc desc-rp">
                             <h1>XXXXXXXX</h1>
 
 
                             <div class="desc-preco">
-                                <div class="preco">
-                                    <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                <div class="preco preco-rp">
+                                    <p class="p1 p1-rp">R$xxxx,xx</p><span>R$xxxx,xx</span>
                                 </div>
-                                <p class="p2">
+                                <p class="p2 p2-rp">
                                     até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
                                 </p>
                             </div>
 
 
-                            <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
+                            <a href="produto.php" class="btn-comprar btn-comprar-rp"><span>comprar</span></a>
                         </div>
                     </div>
 
 
-                    <div class="card-produtos">
-                        <div class="produtos-top">
-                            <div class="promo">
+                    <div class="card-produtos card-rp">
+                        <div class="produtos-top produtos-top-rp">
+                            <div class="promo promo-rp">
                                 <span>-10%</span>
                             </div>
 
 
-                            <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
+                            <a href="index.php" class="fav fav-rp"><span class="material-symbols-outlined">favorite</span></a>
                         </div>
 
 
-                        <div class="img-card img-c">
-                            <img class="img-c" src="images/produto2.webp" alt="imagem do produto">
+                        <div class="img-card img-c img-crp">
+                            <img class="img-c img-crp" src="images/produto2.webp" alt="imagem do produto">
                         </div>
 
 
-                        <div class="desc">
+                        <div class="desc desc-rp">
                             <h1>XXXXXXXX</h1>
 
 
                             <div class="desc-preco">
-                                <div class="preco">
-                                    <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                <div class="preco preco-rp">
+                                    <p class="p1 p1-rp">R$xxxx,xx</p><span>R$xxxx,xx</span>
                                 </div>
-                                <p class="p2">
+                                <p class="p2 p2-rp">
                                     até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
                                 </p>
                             </div>
 
 
-                            <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
+                            <a href="produto.php" class="btn-comprar btn-comprar-rp"><span>comprar</span></a>
                         </div>
                     </div>
 
 
-                    <div class="card-produtos">
-                        <div class="produtos-top">
-                            <div class="promo">
+                    <div class="card-produtos card-rp">
+                        <div class="produtos-top produtos-top-rp">
+                            <div class="promo promo-rp">
                                 <span>-10%</span>
                             </div>
 
 
-                            <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
+                            <a href="index.php" class="fav fav-rp"><span class="material-symbols-outlined">favorite</span></a>
                         </div>
 
 
-                        <div class="img-card img-c">
-                            <img class="img-c" src="images/produto3.webp" alt="imagem do produto">
+                        <div class="img-card img-c img-crp">
+                            <img class="img-c img-crp" src="images/produto3.webp" alt="imagem do produto">
                         </div>
 
 
-                        <div class="desc">
+                        <div class="desc desc-rp">
                             <h1>XXXXXXXX</h1>
 
 
                             <div class="desc-preco">
-                                <div class="preco">
-                                    <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                <div class="preco preco-rp">
+                                    <p class="p1 p1-rp">R$xxxx,xx</p><span>R$xxxx,xx</span>
                                 </div>
-                                <p class="p2">
+                                <p class="p2 p2-rp">
                                     até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
                                 </p>
                             </div>
 
 
-                            <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
-                        </div>
-                    </div>
-                </article>
-
-
-                <article class="card-produtos-pg">
-                    <div class="card-produtos">
-                        <div class="produtos-top">
-                            <div class="promo">
-                                <span>-10%</span>
-                            </div>
-
-
-                            <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
-                        </div>
-
-
-                        <div class="img-card img-c">
-                            <img class="img-c" src="images/produto1.webp" alt="imagem do produto">
-                        </div>
-
-
-                        <div class="desc">
-                            <h1>XXXXXXXX</h1>
-
-
-                            <div class="desc-preco">
-                                <div class="preco">
-                                    <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
-                                </div>
-                                <p class="p2">
-                                    até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
-                                </p>
-                            </div>
-
-
-                            <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
-                        </div>
-                    </div>
-
-
-                    <div class="card-produtos">
-                        <div class="produtos-top">
-                            <div class="promo">
-                                <span>-10%</span>
-                            </div>
-
-
-                            <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
-                        </div>
-
-
-                        <div class="img-card img-c">
-                            <img class="img-c" src="images/produto2.webp" alt="imagem do produto">
-                        </div>
-
-
-                        <div class="desc">
-                            <h1>XXXXXXXX</h1>
-
-
-                            <div class="desc-preco">
-                                <div class="preco">
-                                    <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
-                                </div>
-                                <p class="p2">
-                                    até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
-                                </p>
-                            </div>
-
-
-                            <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
-                        </div>
-                    </div>
-
-
-                    <div class="card-produtos">
-                        <div class="produtos-top">
-                            <div class="promo">
-                                <span>-10%</span>
-                            </div>
-
-
-                            <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
-                        </div>
-
-
-                        <div class="img-card img-c">
-                            <img class="img-c" src="images/produto3.webp" alt="imagem do produto">
-                        </div>
-
-
-                        <div class="desc">
-                            <h1>XXXXXXXX</h1>
-
-
-                            <div class="desc-preco">
-                                <div class="preco">
-                                    <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
-                                </div>
-                                <p class="p2">
-                                    até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
-                                </p>
-                            </div>
-
-
-                            <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
+                            <a href="produto.php" class="btn-comprar btn-comprar-rp"><span>comprar</span></a>
                         </div>
                     </div>
                 </article>
 
 
                 <article class="card-produtos-pg">
-                    <div class="card-produtos">
-                        <div class="produtos-top">
-                            <div class="promo">
+                    <div class="card-produtos card-rp">
+                        <div class="produtos-top produtos-top-rp">
+                            <div class="promo promo-rp">
                                 <span>-10%</span>
                             </div>
 
 
-                            <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
+                            <a href="index.php" class="fav fav-rp"><span class="material-symbols-outlined">favorite</span></a>
                         </div>
 
 
-                        <div class="img-card img-c">
-                            <img class="img-c" src="images/produto1.webp" alt="imagem do produto">
+                        <div class="img-card img-c img-crp">
+                            <img class="img-c img-crp" src="images/produto1.webp" alt="imagem do produto">
                         </div>
 
 
-                        <div class="desc">
+                        <div class="desc desc-rp">
                             <h1>XXXXXXXX</h1>
 
 
                             <div class="desc-preco">
-                                <div class="preco">
-                                    <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                <div class="preco preco-rp">
+                                    <p class="p1 p1-rp">R$xxxx,xx</p><span>R$xxxx,xx</span>
                                 </div>
-                                <p class="p2">
+                                <p class="p2 p2-rp">
                                     até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
                                 </p>
                             </div>
 
 
-                            <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
+                            <a href="produto.php" class="btn-comprar btn-comprar-rp"><span>comprar</span></a>
                         </div>
                     </div>
 
 
-                    <div class="card-produtos">
-                        <div class="produtos-top">
-                            <div class="promo">
+                    <div class="card-produtos card-rp">
+                        <div class="produtos-top produtos-top-rp">
+                            <div class="promo promo-rp">
                                 <span>-10%</span>
                             </div>
 
 
-                            <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
+                            <a href="index.php" class="fav fav-rp"><span class="material-symbols-outlined">favorite</span></a>
                         </div>
 
 
-                        <div class="img-card img-c">
-                            <img class="img-c" src="images/produto2.webp" alt="imagem do produto">
+                        <div class="img-card img-c img-crp">
+                            <img class="img-c img-crp" src="images/produto2.webp" alt="imagem do produto">
                         </div>
 
 
-                        <div class="desc">
+                        <div class="desc desc-rp">
                             <h1>XXXXXXXX</h1>
 
 
                             <div class="desc-preco">
-                                <div class="preco">
-                                    <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                <div class="preco preco-rp">
+                                    <p class="p1 p1-rp">R$xxxx,xx</p><span>R$xxxx,xx</span>
                                 </div>
-                                <p class="p2">
+                                <p class="p2 p2-rp">
                                     até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
                                 </p>
                             </div>
 
 
-                            <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
+                            <a href="produto.php" class="btn-comprar btn-comprar-rp"><span>comprar</span></a>
                         </div>
                     </div>
 
 
-                    <div class="card-produtos">
-                        <div class="produtos-top">
-                            <div class="promo">
+                    <div class="card-produtos card-rp">
+                        <div class="produtos-top produtos-top-rp">
+                            <div class="promo promo-rp">
                                 <span>-10%</span>
                             </div>
 
 
-                            <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
+                            <a href="index.php" class="fav fav-rp"><span class="material-symbols-outlined">favorite</span></a>
                         </div>
 
 
-                        <div class="img-card img-c">
-                            <img class="img-c" src="images/produto3.webp" alt="imagem do produto">
+                        <div class="img-card img-c img-crp">
+                            <img class="img-c img-crp" src="images/produto3.webp" alt="imagem do produto">
                         </div>
 
 
-                        <div class="desc">
+                        <div class="desc desc-rp">
                             <h1>XXXXXXXX</h1>
 
 
                             <div class="desc-preco">
-                                <div class="preco">
-                                    <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                <div class="preco preco-rp">
+                                    <p class="p1 p1-rp">R$xxxx,xx</p><span>R$xxxx,xx</span>
                                 </div>
-                                <p class="p2">
+                                <p class="p2 p2-rp">
                                     até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
                                 </p>
                             </div>
 
 
-                            <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
+                            <a href="produto.php" class="btn-comprar btn-comprar-rp"><span>comprar</span></a>
                         </div>
                     </div>
                 </article>
 
 
                 <article class="card-produtos-pg">
-                    <div class="card-produtos">
-                        <div class="produtos-top">
-                            <div class="promo">
+                    <div class="card-produtos card-rp">
+                        <div class="produtos-top produtos-top-rp">
+                            <div class="promo promo-rp">
                                 <span>-10%</span>
                             </div>
 
 
-                            <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
+                            <a href="index.php" class="fav fav-rp"><span class="material-symbols-outlined">favorite</span></a>
                         </div>
 
 
-                        <div class="img-card img-c">
-                            <img class="img-c" src="images/produto1.webp" alt="imagem do produto">
+                        <div class="img-card img-c img-crp">
+                            <img class="img-c img-crp" src="images/produto1.webp" alt="imagem do produto">
                         </div>
 
 
-                        <div class="desc">
+                        <div class="desc desc-rp">
                             <h1>XXXXXXXX</h1>
 
 
                             <div class="desc-preco">
-                                <div class="preco">
-                                    <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                <div class="preco preco-rp">
+                                    <p class="p1 p1-rp">R$xxxx,xx</p><span>R$xxxx,xx</span>
                                 </div>
-                                <p class="p2">
+                                <p class="p2 p2-rp">
                                     até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
                                 </p>
                             </div>
 
 
-                            <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
+                            <a href="produto.php" class="btn-comprar btn-comprar-rp"><span>comprar</span></a>
                         </div>
                     </div>
 
 
-                    <div class="card-produtos">
-                        <div class="produtos-top">
-                            <div class="promo">
+                    <div class="card-produtos card-rp">
+                        <div class="produtos-top produtos-top-rp">
+                            <div class="promo promo-rp">
                                 <span>-10%</span>
                             </div>
 
 
-                            <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
+                            <a href="index.php" class="fav fav-rp"><span class="material-symbols-outlined">favorite</span></a>
                         </div>
 
 
-                        <div class="img-card img-c">
-                            <img class="img-c" src="images/produto2.webp" alt="imagem do produto">
+                        <div class="img-card img-c img-crp">
+                            <img class="img-c img-crp" src="images/produto2.webp" alt="imagem do produto">
                         </div>
 
 
-                        <div class="desc">
+                        <div class="desc desc-rp">
                             <h1>XXXXXXXX</h1>
 
 
                             <div class="desc-preco">
-                                <div class="preco">
-                                    <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                <div class="preco preco-rp">
+                                    <p class="p1 p1-rp">R$xxxx,xx</p><span>R$xxxx,xx</span>
                                 </div>
-                                <p class="p2">
+                                <p class="p2 p2-rp">
                                     até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
                                 </p>
                             </div>
 
 
-                            <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
+                            <a href="produto.php" class="btn-comprar btn-comprar-rp"><span>comprar</span></a>
                         </div>
                     </div>
 
 
-                    <div class="card-produtos">
-                        <div class="produtos-top">
-                            <div class="promo">
+                    <div class="card-produtos card-rp">
+                        <div class="produtos-top produtos-top-rp">
+                            <div class="promo promo-rp">
                                 <span>-10%</span>
                             </div>
 
 
-                            <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
+                            <a href="index.php" class="fav fav-rp"><span class="material-symbols-outlined">favorite</span></a>
                         </div>
 
 
-                        <div class="img-card img-c">
-                            <img class="img-c" src="images/produto3.webp" alt="imagem do produto">
+                        <div class="img-card img-c img-crp">
+                            <img class="img-c img-crp" src="images/produto3.webp" alt="imagem do produto">
                         </div>
 
 
-                        <div class="desc">
+                        <div class="desc desc-rp">
                             <h1>XXXXXXXX</h1>
 
 
                             <div class="desc-preco">
-                                <div class="preco">
-                                    <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                <div class="preco preco-rp">
+                                    <p class="p1 p1-rp">R$xxxx,xx</p><span>R$xxxx,xx</span>
                                 </div>
-                                <p class="p2">
+                                <p class="p2 p2-rp">
                                     até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
                                 </p>
                             </div>
 
 
-                            <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
+                            <a href="produto.php" class="btn-comprar btn-comprar-rp"><span>comprar</span></a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="card-produtos-pg">
+                    <div class="card-produtos card-rp">
+                        <div class="produtos-top produtos-top-rp">
+                            <div class="promo promo-rp">
+                                <span>-10%</span>
+                            </div>
+
+
+                            <a href="index.php" class="fav fav-rp"><span class="material-symbols-outlined">favorite</span></a>
+                        </div>
+
+
+                        <div class="img-card img-c img-crp">
+                            <img class="img-c img-crp" src="images/produto1.webp" alt="imagem do produto">
+                        </div>
+
+
+                        <div class="desc desc-rp">
+                            <h1>XXXXXXXX</h1>
+
+
+                            <div class="desc-preco">
+                                <div class="preco preco-rp">
+                                    <p class="p1 p1-rp">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                </div>
+                                <p class="p2 p2-rp">
+                                    até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
+                                </p>
+                            </div>
+
+
+                            <a href="produto.php" class="btn-comprar btn-comprar-rp"><span>comprar</span></a>
+                        </div>
+                    </div>
+
+
+                    <div class="card-produtos card-rp">
+                        <div class="produtos-top produtos-top-rp">
+                            <div class="promo promo-rp">
+                                <span>-10%</span>
+                            </div>
+
+
+                            <a href="index.php" class="fav fav-rp"><span class="material-symbols-outlined">favorite</span></a>
+                        </div>
+
+
+                        <div class="img-card img-c img-crp">
+                            <img class="img-c img-crp" src="images/produto2.webp" alt="imagem do produto">
+                        </div>
+
+
+                        <div class="desc desc-rp">
+                            <h1>XXXXXXXX</h1>
+
+
+                            <div class="desc-preco">
+                                <div class="preco preco-rp">
+                                    <p class="p1 p1-rp">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                </div>
+                                <p class="p2 p2-rp">
+                                    até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
+                                </p>
+                            </div>
+
+
+                            <a href="produto.php" class="btn-comprar btn-comprar-rp"><span>comprar</span></a>
+                        </div>
+                    </div>
+
+
+                    <div class="card-produtos card-rp">
+                        <div class="produtos-top produtos-top-rp">
+                            <div class="promo promo-rp">
+                                <span>-10%</span>
+                            </div>
+
+
+                            <a href="index.php" class="fav fav-rp"><span class="material-symbols-outlined">favorite</span></a>
+                        </div>
+
+
+                        <div class="img-card img-c img-crp">
+                            <img class="img-c img-crp" src="images/produto3.webp" alt="imagem do produto">
+                        </div>
+
+
+                        <div class="desc desc-rp">
+                            <h1>XXXXXXXX</h1>
+
+
+                            <div class="desc-preco">
+                                <div class="preco preco-rp">
+                                    <p class="p1 p1-rp">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                </div>
+                                <p class="p2 p2-rp">
+                                    até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
+                                </p>
+                            </div>
+
+
+                            <a href="produto.php" class="btn-comprar btn-comprar-rp"><span>comprar</span></a>
                         </div>
                     </div>
                 </article>

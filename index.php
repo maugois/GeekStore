@@ -13,345 +13,355 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onresize="ajustarTela()">
     <!-- Inclusão do cabeçalho -->
     <?php include('header.html'); ?>
 
 
     <!-- Ínicio da página -->
-    <section id="carousel">
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img class="imgslide" src="images/banner2.webp">
+    <div tabindex="0" onclick="closeSidebar()">
+        <section id="carousel">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img id="car1" class="imgslide" src="images/banner2.webp">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img id="car2" class="imgslide" src="images/banner1.webp">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>   
             </div>
-            
-            <div class="mySlides fade">
-                <img class="imgslide" src="images/banner1.webp">
-            </div>
-            
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>   
-        </div>
-            
-        <div class="dots">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-        </div>
-    </section>
-
-    <main id="principal">
-        <section id="cards">
-            <div class="card">
-                <span class="text-card1">produtos</span>
-                <a href="produto.php" class="text-card2">confira</a>
-            </div>
-
-
-            <div class="card">
-                <span class="text-card1">produtos</span>
-                <a href="produto.php" class="text-card2">confira</a>
-            </div>
-
-
-            <div class="card">
-                <span class="text-card1">produtos</span>
-                <a href="produto.php" class="text-card2">confira</a>
+                
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
             </div>
         </section>
 
-
-        <div class="secao-produtos">
-            <h1 class="title-index">Lançamentos</h1>
-            
-            
-            <section id="lancamentos-prod">
-                <div class="card-produtos">
-                    <div class="produtos-top">
-                        <div class="promo">
-                            <span>-10%</span>
-                        </div>
-
-
-                        <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
-                    </div>
-
-
-                    <div class="img-card img-c">
-                        <img class="img-c" src="images/produto1.webp" alt="imagem do produto">
-                    </div>
-
-
-                    <div class="desc">
-                        <h1>XXXXXXXX</h1>
-
-
-                        <div class="desc-preco">
-                            <div class="preco">
-                                <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
-                            </div>
-                            <p class="p2">
-                                até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
-                            </p>
-                        </div>
-
-
-                        <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
-                    </div>
+        <main id="principal">
+            <section id="cards">
+                <div class="card">
+                    <img class="img-card1" src="images/card.webp" alt="card">
+                    <span class="text-card1">produtos</span>
+                    <a href="produto.php" class="text-card2">confira</a>
                 </div>
 
 
-                <div class="card-produtos">
-                    <div class="produtos-top">
-                        <div class="promo">
-                            <span>-10%</span>
-                        </div>
-
-
-                        <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
-                    </div>
-
-
-                    <div class="img-card img-c">
-                        <img class="img-c" src="images/produto2.webp" alt="imagem do produto">
-                    </div>
-
-
-                    <div class="desc">
-                        <h1>XXXXXXXX</h1>
-
-
-                        <div class="desc-preco">
-                            <div class="preco">
-                                <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
-                            </div>
-                            <p class="p2">
-                                até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
-                            </p>
-                        </div>
-
-
-                        <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
-                    </div>
+                <div class="card">
+                    <img class="img-card1" src="images/card.webp" alt="card">
+                    <span class="text-card1">produtos</span>
+                    <a href="produto.php" class="text-card2">confira</a>
                 </div>
 
 
-                <div class="card-produtos">
-                    <div class="produtos-top">
-                        <div class="promo">
-                            <span>-10%</span>
-                        </div>
-
-
-                        <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
-                    </div>
-
-
-                    <div class="img-card img-c">
-                        <img class="img-c" src="images/produto3.webp" alt="imagem do produto">
-                    </div>
-
-
-                    <div class="desc">
-                        <h1>XXXXXXXX</h1>
-
-
-                        <div class="desc-preco">
-                            <div class="preco">
-                                <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
-                            </div>
-                            <p class="p2">
-                                até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
-                            </p>
-                        </div>
-
-
-                        <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
-                    </div>
-                </div>
-
-                <div class="card-produtos">
-                    <div class="produtos-top">
-                        <div class="promo">
-                            <span>-10%</span>
-                        </div>
-
-
-                        <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
-                    </div>
-
-
-                    <div class="img-card img-c">
-                        <img class="img-c" src="images/produto1.webp" alt="imagem do produto">
-                    </div>
-
-
-                    <div class="desc">
-                        <h1>XXXXXXXX</h1>
-
-
-                        <div class="desc-preco">
-                            <div class="preco">
-                                <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
-                            </div>
-                            <p class="p2">
-                                até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
-                            </p>
-                        </div>
-
-
-                        <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
-                    </div>
+                <div class="card">
+                    <img class="img-card1" src="images/card.webp" alt="card">
+                    <span class="text-card1">produtos</span>
+                    <a href="produto.php" class="text-card2">confira</a>
                 </div>
             </section>
-        </div>
 
 
-        <div class="secao-produtos">
-            <h1 class="title-index" >Mais vendidos</h1>
+            <div class="secao-produtos">
+                <h1 class="title-index">Lançamentos</h1>
+                
+                
+                <section class="sec-r" id="lancamentos-prod">
+                    <div  class="card-prod-r">
+                        <div class="card-produtos card-produtos-ir">
+                            <div class="produtos-top">
+                                <div class="promo">
+                                    <span>-10%</span>
+                                </div>
 
 
-            <section id="vendidos-prod">
-                <div class="card-produtos">
-                    <div class="produtos-top">
-                        <div class="promo">
-                            <span>-10%</span>
-                        </div>
-
-
-                        <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
-                    </div>
-
-
-                    <div class="img-card img-c">
-                        <img class="img-c" src="images/produto1.webp" alt="imagem do produto">
-                    </div>
-
-
-                    <div class="desc">
-                        <h1>XXXXXXXX</h1>
-
-
-                        <div class="desc-preco">
-                            <div class="preco">
-                                <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
                             </div>
-                            <p class="p2">
-                                até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
-                            </p>
-                        </div>
 
 
-                        <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
-                    </div>
-                </div>
-
-
-                <div class="card-produtos">
-                    <div class="produtos-top">
-                        <div class="promo">
-                            <span>-10%</span>
-                        </div>
-
-
-                        <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
-                    </div>
-
-
-                    <div class="img-card img-c">
-                        <img class="img-c" src="images/produto2.webp" alt="imagem do produto">
-                    </div>
-
-
-                    <div class="desc">
-                        <h1>XXXXXXXX</h1>
-
-
-                        <div class="desc-preco">
-                            <div class="preco">
-                                <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                            <div class="img-card img-c img-cir">
+                                <img class="img-c img-cir" src="images/produto1.webp" alt="imagem do produto">
                             </div>
-                            <p class="p2">
-                                até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
-                            </p>
-                        </div>
 
 
-                        <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
-                    </div>
-                </div>
+                            <div class="desc">
+                                <h1>XXXXXXXX</h1>
 
 
-                <div class="card-produtos">
-                    <div class="produtos-top">
-                        <div class="promo">
-                            <span>-10%</span>
-                        </div>
+                                <div class="desc-preco">
+                                    <div class="preco preco-ir">
+                                        <p class="p1 p1-ir">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                    </div>
+                                    <p class="p2 p2-ir">
+                                        até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
+                                    </p>
+                                </div>
 
 
-                        <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
-                    </div>
-
-
-                    <div class="img-card img-c">
-                        <img class="img-c" src="images/produto3.webp" alt="imagem do produto">
-                    </div>
-
-
-                    <div class="desc">
-                        <h1>XXXXXXXX</h1>
-
-
-                        <div class="desc-preco">
-                            <div class="preco">
-                                <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                <a href="produto.php" class="btn-comprar btn-comprar-ir"><span>comprar</span></a>
                             </div>
-                            <p class="p2">
-                                até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
-                            </p>
                         </div>
 
-
-                        <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
-                    </div>
-                </div>
-
-
-                <div class="card-produtos">
-                    <div class="produtos-top">
-                        <div class="promo">
-                            <span>-10%</span>
-                        </div>
+                        <div class="card-produtos card-produtos-ir">
+                            <div class="produtos-top">
+                                <div class="promo">
+                                    <span>-10%</span>
+                                </div>
 
 
-                        <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
-                    </div>
-
-
-                    <div class="img-card img-c">
-                        <img class="img-c" src="images/produto1.webp" alt="imagem do produto">
-                    </div>
-
-
-                    <div class="desc">
-                        <h1>XXXXXXXX</h1>
-
-
-                        <div class="desc-preco">
-                            <div class="preco">
-                                <p class="p1">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
                             </div>
-                            <p class="p2">
-                                até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
-                            </p>
+
+
+                            <div class="img-card img-c img-cir">
+                                <img class="img-c img-cir" src="images/produto2.webp" alt="imagem do produto">
+                            </div>
+
+
+                            <div class="desc">
+                                <h1>XXXXXXXX</h1>
+
+
+                                <div class="desc-preco">
+                                    <div class="preco preco-ir">
+                                        <p class="p1 p1-ir">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                    </div>
+                                    <p class="p2 p2-ir">
+                                        até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
+                                    </p>
+                                </div>
+
+
+                                <a href="produto.php" class="btn-comprar btn-comprar-ir"><span>comprar</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card-prod-r">
+                        <div class="card-produtos card-produtos-ir">
+                            <div class="produtos-top">
+                                <div class="promo">
+                                    <span>-10%</span>
+                                </div>
+
+
+                                <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
+                            </div>
+
+
+                            <div class="img-card img-c img-cir">
+                                <img class="img-c img-cir" src="images/produto3.webp" alt="imagem do produto">
+                            </div>
+
+
+                            <div class="desc">
+                                <h1>XXXXXXXX</h1>
+
+
+                                <div class="desc-preco">
+                                    <div class="preco preco-ir">
+                                        <p class="p1 p1-ir">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                    </div>
+                                    <p class="p2 p2-ir">
+                                        até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
+                                    </p>
+                                </div>
+
+
+                                <a href="produto.php" class="btn-comprar btn-comprar-ir"><span>comprar</span></a>
+                            </div>
                         </div>
 
+                        <div class="card-produtos card-produtos-ir">
+                            <div class="produtos-top">
+                                <div class="promo">
+                                    <span>-10%</span>
+                                </div>
 
-                        <a href="produto.php" class="btn-comprar"><span>comprar</span></a>
+
+                                <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
+                            </div>
+
+
+                            <div class="img-card img-c img-cir">
+                                <img class="img-c img-cir" src="images/produto1.webp" alt="imagem do produto">
+                            </div>
+
+
+                            <div class="desc">
+                                <h1>XXXXXXXX</h1>
+
+
+                                <div class="desc-preco">
+                                    <div class="preco preco-ir">
+                                        <p class="p1 p1-ir">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                    </div>
+                                    <p class="p2 p2-ir">
+                                        até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
+                                    </p>
+                                </div>
+
+
+                                <a href="produto.php" class="btn-comprar btn-comprar-ir"><span>comprar</span></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </section>
-        </div>
-    </main>
+                </section>
+            </div>
+
+
+            <div class="secao-produtos">
+                <h1 class="title-index" >Mais vendidos</h1>
+
+
+                <section class="sec-r" id="vendidos-prod">
+                    <div class="card-prod-r">
+                        <div class="card-produtos card-produtos-ir">
+                            <div class="produtos-top">
+                                <div class="promo">
+                                    <span>-10%</span>
+                                </div>
+
+
+                                <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
+                            </div>
+
+
+                            <div class="img-card img-c img-cir">
+                                <img class="img-c img-cir" src="images/produto1.webp" alt="imagem do produto">
+                            </div>
+
+
+                            <div class="desc">
+                                <h1>XXXXXXXX</h1>
+
+
+                                <div class="desc-preco">
+                                    <div class="preco preco-ir">
+                                        <p class="p1 p1-ir">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                    </div>
+                                    <p class="p2 p2-ir">
+                                        até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
+                                    </p>
+                                </div>
+
+
+                                <a href="produto.php" class="btn-comprar btn-comprar-ir"><span>comprar</span></a>
+                            </div>
+                        </div>
+
+                        <div class="card-produtos card-produtos-ir">
+                            <div class="produtos-top">
+                                <div class="promo">
+                                    <span>-10%</span>
+                                </div>
+
+
+                                <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
+                            </div>
+
+
+                            <div class="img-card img-c img-cir">
+                                <img class="img-c img-cir" src="images/produto2.webp" alt="imagem do produto">
+                            </div>
+
+
+                            <div class="desc">
+                                <h1>XXXXXXXX</h1>
+
+
+                                <div class="desc-preco">
+                                    <div class="preco preco-ir">
+                                        <p class="p1 p1-ir">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                    </div>
+                                    <p class="p2 p2-ir">
+                                        até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
+                                    </p>
+                                </div>
+
+
+                                <a href="produto.php" class="btn-comprar btn-comprar-ir"><span>comprar</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card-prod-r">
+                        <div class="card-produtos card-produtos-ir">
+                            <div class="produtos-top">
+                                <div class="promo">
+                                    <span>-10%</span>
+                                </div>
+
+
+                                <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
+                            </div>
+
+
+                            <div class="img-card img-c img-cir">
+                                <img class="img-c img-cir" src="images/produto3.webp" alt="imagem do produto">
+                            </div>
+
+
+                            <div class="desc">
+                                <h1>XXXXXXXX</h1>
+
+
+                                <div class="desc-preco">
+                                    <div class="preco preco-ir">
+                                        <p class="p1 p1-ir">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                    </div>
+                                    <p class="p2 p2-ir">
+                                        até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
+                                    </p>
+                                </div>
+
+
+                                <a href="produto.php" class="btn-comprar btn-comprar-ir"><span>comprar</span></a>
+                            </div>
+                        </div>
+
+                        <div class="card-produtos card-produtos-ir">
+                            <div class="produtos-top">
+                                <div class="promo">
+                                    <span>-10%</span>
+                                </div>
+
+
+                                <a href="index.php" class="fav"><span class="material-symbols-outlined">favorite</span></a>
+                            </div>
+
+
+                            <div class="img-card img-c img-cir">
+                                <img class="img-c img-cir" src="images/produto1.webp" alt="imagem do produto">
+                            </div>
+
+
+                            <div class="desc">
+                                <h1>XXXXXXXX</h1>
+
+
+                                <div class="desc-preco">
+                                    <div class="preco preco-ir">
+                                        <p class="p1 p1-ir">R$xxxx,xx</p><span>R$xxxx,xx</span>
+                                    </div>
+                                    <p class="p2 p2-ir">
+                                        até <strong>3x</strong> de <strong>R$xxxx,xx</strong> sem juros
+                                    </p>
+                                </div>
+
+
+                                <a href="produto.php" class="btn-comprar btn-comprar-ir"><span>comprar</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
     <!-- Fim da página -->
 
 
@@ -405,5 +415,24 @@
         dots[slideIndex-1].className += " active";
         setTimeout(carousel, 4000);
     }
+
+
+    // carrousel reaponsivo
+    var slide1 = document.getElementById('car1');
+    var slide2 = document.getElementById('car2');
+
+    window.addEventListener('resize', function () {
+        var largura = window.innerWidth;
+
+        if (largura <= 768 ) {
+            slide1.setAttribute('src', 'images/banner1r.webp');
+            slide2.setAttribute('src', 'images/banner2r.webp');
+        } else {
+            slide1.setAttribute('src', 'images/banner1.webp');
+            slide2.setAttribute('src', 'images/banner2.webp');
+        }
+    });
+
+    
 </script>
 <!-- Fim Carrousel -->

@@ -1,6 +1,6 @@
 <header>
-    <div class="container-h">
-        <div id="contato">
+    <div class="container-h" id="container-header">
+        <div id="contato" tabindex="0" onclick="closeSidebar()">
             <ul id="itens-contatos">
                 <li><i class="fa-solid fa-phone"></i> telefone: (11)9999-9999</li>
                 <li><i class="fa-brands fa-whatsapp"></i> whatsapp: (11)9999-9999</li>
@@ -18,30 +18,52 @@
         
         <div class="itens-header" id="myHeader">
             <div id="logo">
-                <a class="img-logo" href="index.php"><img class="img-logo" src="" alt=""></a>
+                <button onclick="toggleSidebar()" class="button-bars">
+                    <i class="fa-solid fa-bars"></i>
+                    <p>menu</p>
+                </button>
+
+                <a class="img-logo" href="index.php"><img class="img-logo" src="images/logo-horizontal/logo2.png" alt="Logo"></a>
             </div>
 
-            <div id="pesquisa">
-                <input id="pesquisa-item" type="text" placeholder="O que você está procurando? "/> 
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
+            <div id="pesquisa" tabindex="0" onclick="closeSidebar()">
+                <input id="pesquisa-item" type="text" placeholder="O que você está procurando? "/>
+                
+                <button id="btn-pesquisa"><i class="fa-solid fa-magnifying-glass"></i></button>
 
-            <div id="itens">
-                <div class="itens-coisas">
-                    <a id="lin-mn-conta" href="index.php"><i class="fa-solid fa-user"></i><p>minha conta</p><span class="material-symbols-outlined" id="arrow-white">expand_more</span></a>
-                </div>
-
-                <div class="itens-coisas">
-                    <a href="index.php"><span class="material-symbols-outlined" id="heart-red">favorite</span></a>
-                </div>
-
-                <div class="itens-coisas">
-                    <a href="index.php"><span class="material-symbols-outlined" id="cart-white">shopping_cart</span><span id="ntf-circle"></span></a>
+                <div id="itens">
+                    <div class="itens-coisas">
+                        <a id="lin-mn-conta" href="index.php"><i class="fa-solid fa-user"></i><p class="rnone-coisas">minha conta</p><span class="material-symbols-outlined rnone-coisas" id="arrow-white">expand_more</span></a>
+                    </div>
+    
+                    <div class="itens-coisas">
+                        <a href="index.php"><span class="material-symbols-outlined" id="heart-red">favorite</span></a>
+                    </div>
+    
+                    <div class="itens-coisas">
+                        <a href="index.php"><span class="material-symbols-outlined" id="cart-white">shopping_cart</span><span id="ntf-circle"></span></a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <nav class="menu">
+        <div id="lp-responsivo" onclick="closeSidebar()">
+            <div id="logo-r">
+                <a class="img-logor" href="index.php"><img class="img-logor" src="images/logo-horizontal/logo2.png" alt="Logo"></a>
+            </div>
+            
+            <div id="pesquisa-r">
+                <input id="pesquisa-itemr" type="text" placeholder="O que você está procurando? "/>
+            
+                <button id="btn-pesquisar"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+
+        <nav class="menu" id="nav-menu">
+            <button onclick="toggleSidebar()" class="button-bars">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
             <ul id="menu-itens">
                 <li class="menu-item"><a href="produto.php">produtos</a></li>        
                 <li class="menu-item"><a href="index.php">canecas</a></li>
